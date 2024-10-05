@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #202329;
+}
+main{
+    font-family: 'Open Sans', Roboto, sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 160px;
+    border-radius: 8px;
+    background-color: #3C3E44;
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-template-rows: auto;
+}
+.profile-picture{
+    width: 160px;
+    height: fit-content;
+    border-radius: 8px 0px 0px 8px;
+}
+.card-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 15px;
+    display: grid;
+    align-items: center;
+}
+h1{
+    font-size: 18px;
+}
+.status{
+    display: grid;
+    grid-template-columns: 8px auto;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    align-items: center;
+}
+.bullet{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: #ADFF2F;
+}
+h2{
+    font-size: 16px;
+}
+.gray-text{
+    color: #707E7B;
+    font-size: 12px;
+    margin: 3px 0;
+}
